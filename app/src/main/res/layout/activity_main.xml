@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dataservicios.ttauditbayermercaderismo.MainActivity"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/logo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/platzigram"-->
+                <!--/>-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fondo_agente"
+                android:layout_centerInParent="true"
+                android:id="@+id/imageView" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            >
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Ver..."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/textsize_min"
+                android:textColor="@color/colorWhite"
+
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/tvLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Cargando..."
+                android:layout_below="@+id/tvVersion"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="@dimen/textsize_min"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_horizontal" />
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/Splash_ProgressBar"-->
+                <!--style="?android:attr/progressBarStyleSmall"-->
+                <!--android:theme="@style/CircularProgress"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/tvCargando"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_horizontal_login"
+                android:paddingRight="@dimen/padding_horizontal_login"
+                android:weightSum="0"
+                android:layout_below="@+id/tvLoad"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="17dp">
+
+                <ProgressBar
+                    android:id="@+id/pbLoad"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:theme="@style/LinearProgress"
+                    android:layout_weight="0.40" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

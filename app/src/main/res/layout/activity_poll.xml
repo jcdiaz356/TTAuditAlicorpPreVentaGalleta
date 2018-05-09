@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dataservicios.ttauditalicorppreventagalleta.view.StoreAuditActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+    <!-- Objeto con Scroll -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_text">
+                <include layout="@layout/content_store" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_text">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:paddingRight="@dimen/activity_vertical_margin"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:paddingTop="@dimen/activity_vertical_margin">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_audit"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/tvAuditoria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:text="Auditoria"
+                            />
+                        <TextView
+                            android:id="@+id/tvPoll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:layout_gravity="left"
+                            android:text="" />
+                        <!--<android.support.v7.widget.SwitchCompat-->
+                        <!--android:id="@+id/switch1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+                        <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textOn="@string/sw_si"-->
+                        <!--android:textOff="@string/sw_no"-->
+                        <!--android:showText="true"-->
+                        <!--android:textColor="@color/colorWhite"-->
+                        <!--android:thumb="@drawable/custom_swich_selector"-->
+                        <!--android:track="@drawable/custom_swich_track"-->
+                        <!--/>-->
+
+                        <!--<android.support.v7.widget.SwitchCompat-->
+                        <!--android:id="@+id/switch1"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+                        <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Switch with status text"-->
+                        <!--android:textOn="@string/sw_si"-->
+                        <!--android:textOff="@string/sw_no"-->
+                        <!--android:showText="true"-->
+
+                        <!--/>-->
+
+                        <!--<Switch-->
+                        <!--android:id="@+id/switch2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+                        <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:text="Switch with status text"-->
+                        <!--android:textOn="@string/sw_si"-->
+                        <!--android:textOff="@string/sw_no"-->
+                        <!--android:showText="true"-->
+                        <!--style="@style/SwitchCompatStyle"-->
+                        <!--/>-->
+
+                        <Switch
+                            android:id="@+id/swYesNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:layout_gravity="center"
+                            android:textOn="@string/sw_si"
+                            android:textOff="@string/sw_no"
+                            android:showText="true"
+                            android:textColor="@color/colorWhite"
+                            style="@style/SwitchCompatStyle"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/lyOptions"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:paddingRight="@dimen/activity_vertical_margin"
+                            >
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lyOptionComment"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_vertical_margin"
+                            android:paddingRight="@dimen/activity_vertical_margin"
+                            >
+                        </LinearLayout>
+                        <ImageButton
+                            android:id="@+id/btPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_menu_camera"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:layout_gravity="center"
+                            style="?android:attr/borderlessButtonStyle"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lyComment"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:paddingRight="@dimen/activity_vertical_margin"
+                        >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_text"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btSave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_save"
+                            android:text="@string/save"
+                            android:theme="@style/ButtonCloseAudit" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <!-- App Bar -->
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

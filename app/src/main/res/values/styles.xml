@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="button_style_r">@style/ButtonsAudit</item>
+    </style>
+    <attr name="button_style_r" format="reference" />
+    <!--<style name="AppTheme.NoActionBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="RaisedButtonDark" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RaisedButtonDarkMin" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textsize_min</item>
+    </style>
+
+    <style name="ButtonCloseAudit" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorRed</item>
+        <item name="colorControlHighlight">@color/colorRedDark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="ButtonsAudit" parent="Widget.AppCompat.Button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_audit</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="SwitchCompatStyle" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:thumb">@drawable/custom_swich_selector</item>
+        <item name="android:track">@drawable/custom_swich_track</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+    <!--<style name="ButtonsAudit" parent="Widget.AppCompat.Button">-->
+        <!--<item name="android:gravity">center_vertical|center_horizontal</item>-->
+        <!--<item name="android:textColor">#FFFFFFFF</item>-->
+        <!--<item name="android:shadowColor">#FF000000</item>-->
+        <!--<item name="android:layout_marginBottom">16dp</item>-->
+        <!--<item name="android:layout_marginTop">16dp</item>-->
+        <!--<item name="android:shadowDx">0</item>-->
+        <!--<item name="android:shadowDy">-1</item>-->
+        <!--<item name="android:shadowRadius">0.2</item>-->
+        <!--<item name="android:textSize">16dip</item>-->
+        <!--<item name="android:background">@drawable/button_audit</item>-->
+        <!--<item name="android:focusable">true</item>-->
+        <!--<item name="android:clickable">true</item>-->
+    <!--</style>-->
+
+
+    <style name="EditTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/edittext_textsize_login</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorBlack</item>
+    </style>
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="LinearProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorWhite</item>
+    </style>
+
+    <style name="Etiquetas">
+        <item name="android:background">@drawable/side_nav_bar</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+</resources>

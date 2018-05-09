@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dataservicios.ttauditalicorppreventagalleta.view.StoreAuditActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+    <!-- Objeto con Scroll -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_text">
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <TextView
+                                    android:id="@+id/tvInfoTienda"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/text_register_store"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                    android:textColor="@color/colorPrimaryDark" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <!--<LinearLayout-->
+                            <!--android:orientation="vertical"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:padding="@dimen/textsize_min"-->
+                            <!--android:weightSum="1"-->
+                            <!--android:focusable="true"-->
+                            <!--android:focusableInTouchMode="true">-->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/textsize_min"
+                            android:weightSum="1"
+                            >
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:visibility="visible"
+                                android:id="@+id/lyPermitio">
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_fullname"/>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:inputType="textCapSentences"
+                                            android:scrollHorizontally="false"
+                                            android:scrollbars="vertical"
+                                            android:id="@+id/etFullname"
+                                            android:focusable="true"
+                                            android:focusableInTouchMode="true"
+                                            />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_ruc"/>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:inputType="number"
+                                            android:scrollHorizontally="false"
+                                            android:scrollbars="vertical"
+                                            android:id="@+id/etRuc"
+                                            android:focusable="true"
+                                            android:focusableInTouchMode="true"
+                                            />
+                                    </LinearLayout>
+                                    <TextView
+                                        android:id="@+id/tvStock"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_address" />
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:inputType="textCapSentences"
+                                            android:scrollHorizontally="false"
+                                            android:scrollbars="vertical"
+                                            android:id="@+id/etAddress"
+                                            android:focusable="true"
+                                            android:focusableInTouchMode="true"
+                                            />
+                                    </LinearLayout>
+
+                                    <!--<TextView-->
+                                        <!--android:layout_width="wrap_content"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="@string/text_cod_distritutor"/>-->
+                                    <!--<LinearLayout-->
+                                        <!--android:orientation="horizontal"-->
+                                        <!--android:layout_width="fill_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:padding="5dp"-->
+                                        <!--android:visibility="visible">-->
+                                        <!--<EditText-->
+                                            <!--android:layout_width="match_parent"-->
+                                            <!--android:layout_height="45dp"-->
+                                            <!--android:inputType="number"-->
+                                            <!--android:scrollHorizontally="false"-->
+                                            <!--android:scrollbars="vertical"-->
+                                            <!--android:id="@+id/etCodDistributor"-->
+                                            <!--android:focusable="true"-->
+                                            <!--android:focusableInTouchMode="true"-->
+                                            <!--/>-->
+                                    <!--</LinearLayout>-->
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_fullname_vendor"/>
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:inputType="textCapSentences"
+                                            android:scrollHorizontally="false"
+                                            android:scrollbars="vertical"
+                                            android:id="@+id/etVendorFullname"
+                                            android:focusable="true"
+                                            android:focusableInTouchMode="true"
+                                            />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_departamet" />
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/spDepartament"
+                                            />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_district" />
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/spDistrict"
+                                            />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_telephone" />
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <EditText
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:inputType="phone"
+                                            android:scrollHorizontally="false"
+                                            android:scrollbars="vertical"
+                                            android:id="@+id/etTelefono"
+                                            android:focusable="true"
+                                            android:focusableInTouchMode="true"
+                                            />
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/text_giro" />
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+                                        <Spinner
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="50dp"
+                                            android:id="@+id/spGiro"
+                                            />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_text">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Widget.CardContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btSave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_save"
+                            android:text="@string/save"
+                            android:theme="@style/ButtonCloseAudit" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <!-- App Bar -->
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+

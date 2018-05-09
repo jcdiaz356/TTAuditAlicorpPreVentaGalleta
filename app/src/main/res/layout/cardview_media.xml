@@ -1,0 +1,60 @@
+<android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/list_background_pressed"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_vertical_margin">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imgPhoto"
+                    android:text="FullName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvFullName"
+                    android:layout_marginTop="14dp"
+                    android:layout_toEndOf="@+id/imgPhoto"
+                    android:background="@color/colorRed"
+                    android:paddingLeft="@dimen/padding_text"
+                    android:paddingRight="@dimen/padding_text"
+                    android:text="ID"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorWhite" />
+                <ImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="82dp"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_alignParentLeft="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>
+

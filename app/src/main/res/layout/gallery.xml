@@ -1,0 +1,55 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dataservicios.ttauditbayermercaderismo.view.StoreAuditActivity">
+
+    <include layout="@layout/actionbar_toolbar"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <GridView
+        android:id="@+id/PhoneImageGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="4dip"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="4dip"
+        android:padding="4dip"
+        android:focusableInTouchMode="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:theme="@style/RaisedButtonDark"
+                android:text="TOMAR FOTO"
+                android:drawableLeft="@drawable/ic_action_camera_white"
+                android:layout_weight="0.5"
+                android:id="@+id/take_photo" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUBIR FOTO"
+                android:theme="@style/RaisedButtonDark"
+                android:layout_weight="0.5"
+                android:drawableLeft="@drawable/ic_action_upload"
+                android:id="@+id/save_images" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

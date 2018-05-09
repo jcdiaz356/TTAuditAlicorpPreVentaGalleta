@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mnuAbout" android:title="@string/menu_text_about" android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/mnuCloseSesion" android:title="@string/menu_text_close_sesion" android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/mnuExit" android:title="@string/menu_text_exit" android:orderInCategory="100" app:showAsAction="never" />
+</menu>
